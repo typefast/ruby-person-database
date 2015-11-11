@@ -11,7 +11,7 @@ end
 def create_table
   puts "Creating people table"
   $db.execute %q{
-    CREATE TABLE people (
+    CREATE TABLE IF NOT EXISTS people (
       id integer primary key,
       name varchar(50),
       job varchar(50), 
