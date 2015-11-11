@@ -43,10 +43,11 @@ def find_person
     return
   end
   
-  puts %q{Name: #{person['name']}
+  puts %Q{Name: #{person['name']}
   Job: #{person['job']}
   Gender: #{person['gender']}
-  Age: #{person['age']}}
+  Age: #{person['age']}
+  }
 end
 
 loop do
