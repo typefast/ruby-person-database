@@ -1,0 +1,10 @@
+require 'sqlite3'
+$db = SQLite3::Database.new("dbfile")
+$db.results_as_hash = true
+
+def disconnect_and_quit
+  $db.close
+  puts "Bye!"
+  exit
+end
+
